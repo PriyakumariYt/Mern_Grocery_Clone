@@ -14,7 +14,7 @@ const productRoute = require("./Router/product-router");
 
 const app = express();
 const corsOptions = {
-    origin: "http://localhost:5173",
+    origin: "https://grocery-frontend-jade.vercel.app",
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
     credentials: true,
 };
