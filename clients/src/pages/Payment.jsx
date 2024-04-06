@@ -30,7 +30,7 @@ const Payment = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/api/auth/payment", {
+      const response = await fetch("https://grocery-backend-delta.vercel.app/auth/payment", {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
