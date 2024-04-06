@@ -25,7 +25,9 @@ app.use("/api/form", contactRoute);
 app.use("/api/data", serviceRoute)
 app.use("/api/data",productRoute)
 // app.use("/api/auth/",paymentRoute)
-
+app.get("/",(req,res)=>{
+    res.send("hello world")
+})
 
 connectDb().then(()=>{
     app.listen(port, () => {
